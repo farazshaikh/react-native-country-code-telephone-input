@@ -1,0 +1,13 @@
+{
+  "name": "react-native-telephone-input",
+  "version": "0.0.1",
+  "main": "phonenumberpicker.js",
+  "dependencies": {
+    "libphonenumber-js": "^0.2.24"
+  },
+  "keywords": [
+    "telephone number phonenumber picker country code validation pincode whatsapp registration onboarding"
+  ],
+  "author": "faraz.shaikh@gmail.com github.com:/farazshaikh",
+  "license": "MIT"
+}
