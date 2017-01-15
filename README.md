@@ -42,7 +42,7 @@ class UserOnBoarding extends React.Component {
 See ExampleTelephoneInput for a sample.
 ```
 #git clone https://github.com/farazshaikh/react-native-telephone-input
-#cd react-native-telephone-input/ExampleTeletephoneInput
+#cd react-native-telephone-input/ExampleTelephoneInput
 #npm install
 #react-native run-ios
 ```
