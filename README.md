@@ -8,22 +8,13 @@ Ready-to-use components for building a Whatsapp style user onboarding workflow
 * Works for both android and iOS
 * little emphasis on look and feel and more on functionality. Users can always change color/images etc
 
-
-
 Dependency: React-Native
 
-![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/1.png)
-![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/2.png)
-![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/3.png)
-![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/4.png)
-![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/5.png)
-![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/6.png)
-
-
-### Changelog
-- 0.0.1 first version
 
 ### Example
+```
+npm install react-native-telephone-input --save
+```
 
 ```javascript
 import PhoneNumberPicker from 'react-native-telephone-input'
@@ -41,7 +32,6 @@ class UserOnBoarding extends React.Component {
 }
 ```
 
-
 See ExampleTelephoneInput for a sample.
 ```
 #git clone https://github.com/farazshaikh/react-native-telephone-input
@@ -49,6 +39,25 @@ See ExampleTelephoneInput for a sample.
 #npm install
 #react-native run-ios
 ```
+
+
+
+
+![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/3.png)
+![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/4.png)
+
+
+![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/1.png)
+![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/2.png)
+![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/5.png)
+![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/6.png)
+
+
+### Changelog
+- 0.0.1 first version
+
+
+
 
 [MIT](LICENSE)
 
