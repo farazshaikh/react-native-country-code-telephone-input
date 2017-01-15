@@ -1,15 +1,18 @@
 # React native phone number picker and Numeric pin picker
 Ready-to-use components for building a Whatsapp style user onboarding workflow
--Accept user phone input
--Validate 6 digit pin
--Works for both android and iOS
--little emphasis on look and feel and more on functionality. Users can always change color/images etc
+
+* Accept user phone input
+* Basic validation for user phone input based on country code
+* Country calling code picker
+* Validate 6 digit pin
+* Works for both android and iOS
+* little emphasis on look and feel and more on functionality. Users can always change color/images etc
 
 
 
 Dependency: React-Native
 
-![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/1.png)
+![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/1.png =320x568)
 ![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/2.png)
 ![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/3.png)
 ![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/4.png)
