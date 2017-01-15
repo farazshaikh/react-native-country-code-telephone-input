@@ -22,6 +22,7 @@ Dependency: React-Native
 
 ### Example
 
+```javascript
 import PhoneNumberPicker from 'react-native-telephone-input'
 
 class UserOnBoarding extends React.Component {
@@ -35,13 +36,16 @@ class UserOnBoarding extends React.Component {
          onChange={this.PhoneNumberPickerChanged.bind(this)}/>
          }
 }
+```
 
 
 See ExampleTelephoneInput for a sample.
+```
 #git clone https://github.com/farazshaikh/react-native-telephone-input
 #cd react-native-telephone-input/ExampleTeletephoneInput
 #npm install
 #react-native run-ios
+```
 
 [MIT](LICENSE)
 
