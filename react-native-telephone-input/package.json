@@ -1,6 +1,6 @@
 {
-  "name": "react-native-telephone-input",
-  "version": "0.0.1",
+  "name": "react-native-country-code-telephone-input",
+  "version": "0.0.6",
   "main": "phonenumberpicker.js",
   "dependencies": {
     "libphonenumber-js": "^0.2.24"

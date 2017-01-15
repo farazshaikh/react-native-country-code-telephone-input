@@ -13,11 +13,11 @@ Dependency: React-Native
 
 ### Example
 ```
-npm install react-native-telephone-input --save
+npm install react-native-country-code-telephone-input --save
 ```
 
 ```javascript
-import PhoneNumberPicker from 'react-native-telephone-input'
+import PhoneNumberPicker from 'react-native-country-code-telephone-input'
 
 class UserOnBoarding extends React.Component {
         PhoneNumberPickerChanged(country, callingCode, phoneNumber) {
@@ -34,8 +34,8 @@ class UserOnBoarding extends React.Component {
 
 See ExampleTelephoneInput for a sample.
 ```
-#git clone https://github.com/farazshaikh/react-native-telephone-input
-#cd react-native-telephone-input/ExampleTelephoneInput
+#git clone https://github.com/farazshaikh/react-native-country-code-telephone-input
+#cd react-native-country-code-telephone-input/ExampleTelephoneInput
 #npm install
 #react-native run-ios
 ```
@@ -43,14 +43,14 @@ See ExampleTelephoneInput for a sample.
 
 
 
-![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/3.png)
-![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/4.png)
+![](https://github.com/farazshaikh/react-native-country-code-telephone-input/blob/master/ExampleTelephoneInput/screenshots/3.png)
+![](https://github.com/farazshaikh/react-native-country-code-telephone-input/blob/master/ExampleTelephoneInput/screenshots/4.png)
 
 
-![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/1.png)
-![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/2.png)
-![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/5.png)
-![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/6.png)
+![](https://github.com/farazshaikh/react-native-country-code-telephone-input/blob/master/ExampleTelephoneInput/screenshots/1.png)
+![](https://github.com/farazshaikh/react-native-country-code-telephone-input/blob/master/ExampleTelephoneInput/screenshots/2.png)
+![](https://github.com/farazshaikh/react-native-country-code-telephone-input/blob/master/ExampleTelephoneInput/screenshots/5.png)
+![](https://github.com/farazshaikh/react-native-country-code-telephone-input/blob/master/ExampleTelephoneInput/screenshots/6.png)
 
 
 ### Changelog
