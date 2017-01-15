@@ -12,7 +12,7 @@ Ready-to-use components for building a Whatsapp style user onboarding workflow
 
 Dependency: React-Native
 
-![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/1.png =320x568)
+![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/1.png =160x284)
 ![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/2.png)
 ![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/3.png)
 ![](https://github.com/farazshaikh/react-native-telephone-input/blob/master/ExampleTelephoneInput/screenshots/4.png)
