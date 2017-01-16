@@ -45,6 +45,8 @@ See ExampleTelephoneInput for a sample.
 
 ![](https://raw.githubusercontent.com/farazshaikh/react-native-country-code-telephone-input/master/ExampleTelephoneInput/screenshots/3.png)
 ![](https://raw.githubusercontent.com/farazshaikh/react-native-country-code-telephone-input/master/ExampleTelephoneInput/screenshots/4.png)
+![](https://raw.githubusercontent.com/farazshaikh/react-native-country-code-telephone-input/master/ExampleTelephoneInput/screenshots/7.png)
+![](https://raw.githubusercontent.com/farazshaikh/react-native-country-code-telephone-input/master/ExampleTelephoneInput/screenshots/8.png)
 
 
 ![](https://raw.githubusercontent.com/farazshaikh/react-native-country-code-telephone-input/master/ExampleTelephoneInput/screenshots/1.png)
