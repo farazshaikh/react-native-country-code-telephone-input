@@ -3,7 +3,8 @@
   "version": "0.0.9",
   "main": "phonenumberpicker.js",
   "dependencies": {
-    "libphonenumber-js": "^0.2.24"
+    "libphonenumber-js": "^0.2.24",
+    "prop-types": "^15.6.2"
   },
   "keywords": [
     "telephone number phonenumber picker country code validation pincode whatsapp registration onboarding"
