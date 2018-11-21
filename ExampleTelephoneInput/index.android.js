@@ -1,53 +1,132 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+// Copyright (c) 2014-Present All rights reserved.
+// The Authors at Excubito Pvt Ltd.
 
-import React, { Component } from 'react';
+"use strict";
+
+import React from "react";
 import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
-} from 'react-native';
+  TextInput,
+  View,
+  ActivityIndicator,
+} from "react-native";
+import PropTypes from "prop-types";
 
-export default class ExampleTelephoneInput extends Component {
+import { Button } from "native-base";
+
+import { parse, format, asYouType, isValidNumber } from "libphonenumber-js";
+import PhoneNumberPicker from "react-native-telephone-input";
+
+class LoginPin extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      networkRequestPending: false,
+      errorMessage: "",
+      countryName: "Unknown",
+      callingCode: "1",
+      phoneNo: "0000",
+    };
+  }
+
+  networkRequestStarted() {
+    //console.log(arguments.callee.name || "anonymous")
+    return this.setState({ errorMessage: "...", networkRequestPending: true });
+  }
+
+  networkRequestCompleted(errorMessage = "") {
+    //console.log(arguments.callee.name || "anonymous")
+    if (typeof errorMessage !== "string") {
+      console.log(errorMessage);
+      debugger;
+      errorMessage = "errorMessageNotString";
+    }
+    return this.setState({
+      errorMessage: errorMessage,
+      networkRequestPending: false,
+    });
+  }
+
+  PhoneSubmit() {
+    this.networkRequestStarted();
+    // your fetch call here with this.state.callingCode & this.state.phoneNumber
+  }
+
+  PhoneNumberPickerChanged(country, callingCode, phoneNumber) {
+    this.setState({
+      countryName: country.name,
+      callingCode: callingCode,
+      phoneNo: phoneNumber,
+    });
+  }
+
+  PickerIsValidPhoneNumber() {
+    return isValidNumber("+" + this.state.callingCode + this.state.phoneNo);
+  }
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
+      <View style={{ marginTop: 64 }}>
+        <Text style={styles.infoMsg}>
+          {" "}
+          We will send a SMS to verify your phone number. Enter your country
+          code and phone number.
         </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
+
+        <PhoneNumberPicker
+          countryHint={this.props.countryHint}
+          onChange={this.PhoneNumberPickerChanged.bind(this)}
+        />
+
+        <Text style={styles.infoMsg}>
+          {this.PickerIsValidPhoneNumber()
+            ? "Phone number valid"
+            : "Enter your phone number"}
         </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
+
+        <Button
+          disabled={
+            this.PickerIsValidPhoneNumber() == false ||
+            this.state.networkRequestPending
+          }
+          style={{ alignSelf: "center" }}
+          onPress={this.PhoneSubmit.bind(this)}
+        >
+          Get login pin
+        </Button>
+
+        <ActivityIndicator
+          animating={this.state.networkRequestPending}
+          style={{ alignSelf: "center", width: 40 }}
+        />
+
+        <Text style={styles.infoMsg}> Carrier SMS charges may apply </Text>
+        <Text style={styles.infoMsg}> {this.state.errorMessage} </Text>
+
+        {__DEV__ && (
+          <Text style={styles.infoMsg}>
+            {this.state.countryName} + {this.state.callingCode} -{" "}
+            {this.state.phoneNo}
+          </Text>
+        )}
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+LoginPin.PropTypes = {
+  countryHint: PropTypes.object,
+  appStrings: PropTypes.object.isRequired,
+};
+
+let styles = StyleSheet.create({
+  infoMsg: {
+    marginHorizontal: 20,
+    marginVertical: 10,
+    textAlign: "center",
   },
 });
 
-AppRegistry.registerComponent('ExampleTelephoneInput', () => ExampleTelephoneInput);
+AppRegistry.registerComponent("ExampleTelephoneInput", () => LoginPin);
