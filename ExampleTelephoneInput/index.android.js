@@ -17,7 +17,7 @@ import PropTypes from "prop-types";
 import { Button } from "native-base";
 
 import { parse, format, asYouType, isValidNumber } from "libphonenumber-js";
-import PhoneNumberPicker from "react-native-telephone-input";
+import PhoneNumberPicker from "react-native-country-code-telephone-input";
 
 class LoginPin extends React.Component {
   constructor(props) {
