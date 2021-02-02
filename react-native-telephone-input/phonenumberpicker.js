@@ -21,7 +21,7 @@ import CallingCodeToCCA2 from 'libphonenumber-js/metadata.min'
 import CountryPicker from './countrypicker'
 /* maps CCA2 -> CountryLocalDetails */
 import Countries     from './data'
-
+import PropTypes from 'prop-types'
 
 var styles = StyleSheet.create({
     containerCol: {
@@ -206,7 +206,7 @@ class PhoneNumberPicker extends React.Component {
     }
 
     componentDidMount() {
- 
+
         setTimeout(
             () => {
                 this.textInputPhoneNumber.focus()},
@@ -284,9 +284,10 @@ class PhoneNumberPicker extends React.Component {
 }
 
 PhoneNumberPicker.PropTypes = {
-    onChange: React.PropTypes.Function,
-    countryHint: React.PropTypes.Object,
+    onChange: PropTypes.func,
+    countryHint: PropTypes.Object,
 }
+
 
 PhoneNumberPicker.defaultProps = {
     countryHint: {name: 'United States', cca2: 'US', callingCode:'1'},
