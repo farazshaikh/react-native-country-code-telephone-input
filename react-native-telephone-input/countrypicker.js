@@ -16,6 +16,7 @@ import {
 } from 'react-native';
 
 import dataCountries from './data'
+import PropTypes from 'prop-types'
 
 var styles = StyleSheet.create({
     containerCol: {
@@ -57,7 +58,7 @@ var styles = StyleSheet.create({
 
 class CountryPicker extends Component {
     static propTypes = {
-        onChange: React.PropTypes.func.isRequired,
+      onChange: PropTypes.func.isRequired,
     }
 
     constructor (props) {
